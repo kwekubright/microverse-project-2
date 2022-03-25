@@ -8,60 +8,86 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   </head>
 
-  <body>
+  <body style="background-color: #486e91;">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     
     <h1 id="title" style="text-align: center;">Welcome to the survey form</h1>
     <p id="description" style="text-align: center;">This form is to gather you feedback</p>
 
-    <form action="#" id="survey-form">
-      <label for="" id="name-label">Name</label>
-      <input type="text" name="Name" id="name" placeholder="Enter Your Name">
-      <label for="" id="email-label">Email</label>
-      <input type="email" name="Email" id="email"  placeholder="Enter Your Email">
-      <label for="" id="number-label">Age(optional)</label>
-      <input type="number" name="" id="number" min="1" max = "90" placeholder="Enter Your Age">
-      <select class="form-select" id="dropdown" aria-label="Default select example">
-        <option selected>Open this select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
 
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="user-recommend" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault1">
-          Default radio
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="user-recommend" id="flexRadioDefault2" checked>
-        <label class="form-check-label" for="flexRadioDefault2">
-          Default checked radio
-        </label>
-      </div>
+    <div style="margin:0 auto; background-color: #ffffff; width:70%;padding: 30px;">
+      <form action="#" id="survey-form">
+  
+        <label  for="basic-url" class="form-label" for="" id="name-label">Name</label>
+        <div class="input-group">
+          <input class="form-control" type="text" name="Name" id="name" placeholder="Enter Your Name" required>
+        </div>
 
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="Agree" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          Agree
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="Not Agree" id="flexCheckChecked" checked>
-        <label class="form-check-label" for="flexCheckChecked">
-          Not Agree
-        </label>
-      </div>
+  <br />
+        <label for="" id="email-label">Email</label>
+        <div class="input-group">
+          <input class="form-control" type="email" name="Email" id="email"  placeholder="Enter Your Email" required>
+  
+        </div>
+  <br />
+        <label for="" id="number-label">Age(optional)</label>
+        <div class="input-group">
+          <input class="form-control" type="number" name="" id="number" min="1" max = "90" placeholder="Enter Your Age">
+        </div>
+  <br />
+        <label for="" id="number-label">Dropdown</label>
+        <div class="input-group">
+        <select class="form-select" id="dropdown" aria-label="Default select example">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        </div>
+  <br />
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="user-recommend" id="flexRadioDefault1" value="0">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Default radio
+          </label>
+        </div>
+        <br />
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="user-recommend" id="flexRadioDefault2" value="0" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Default checked radio
+          </label>
+        </div>
 
-      <div class="form-floating">
-        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <br />
+  
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Agree" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Agree
+          </label>
+        </div>
+        <br />
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Not Agree" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Not Agree
+          </label>
+        </div>
+  <br />
         <label for="floatingTextarea">Comments</label>
-      </div>
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        </div>
+  
 
-      <input class="btn btn-primary" type="submit" value="Submit" id="submit">
+        <br />
+        <input class="btn btn-primary" type="submit" value="Submit" id="submit" style="width:100%">
+  
+      </form>
 
-    </form>
+    </div>
+
 
 
 
